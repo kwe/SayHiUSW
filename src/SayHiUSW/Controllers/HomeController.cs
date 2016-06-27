@@ -16,6 +16,7 @@ namespace SayHiUSW.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
+            ViewData["Machine"] = Environment.MachineName;
 
             return View();
         }
